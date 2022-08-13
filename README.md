@@ -4,16 +4,16 @@ This repo aims to cover Docker details (Dockerfile, Image, Container, Commands, 
 **Keywords:** Docker-Image, Dockerfile, Containerization, Docker-Compose, Docker-Volume, Docker-Network, Docker-Swarm, Service, Cheatsheet.
 
 # Quick Look (HowTo)
-- [App: Creating First Docker Image and Container using Docker File](https://github.com/omerbsezer/Fast-Docker/blob/main/FirstImageFirstContainer.md)
-- [App: Binding Volume to the Different Containers](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerVolume.md)
+- [App: Creating First Docker Image and Container using Docker File](https://github.com/apotitech/Swift-Docker/blob/main/FirstImageFirstContainer.md)
+- [App: Binding Volume to the Different Containers](https://github.com/apotitech/Swift-Docker/blob/main/DockerVolume.md)
 - [App: Binding Mount to the Container](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerVolume.md#app_mount)
-- [App: Docker-Compose File - Creating 2 Different Containers:  WordPress Container depends on MySql Container](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerCompose.md)
-- [App: Creating Docker Swarm Cluster With 5 PCs using PlayWithDocker : 3 x WordPress Containers and 1 x MySql Container using Docker-Compose File](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerStackService.md)
-- [App: Running Docker Free Local Registry, Tagging Image, Pushing Image to the Local Registry, Pulling Image From Local Registry and Deleting Images from Local Registry](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerLocalRegistry.md)
-- [App: Transferring Content between Host PC and Docker Container](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerTransferringContent.md)
-- [App: Creating Docker Container using Dockerfile to Build C++ on Ubuntu18.04](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerfileForLinuxC%2B%2BBuild.md)
-- [App: Creating Docker Container using Dockerfile to Build C++ on Windows](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerfileForWindowsC%2B%2BBuild.md)
-- [Docker Commands Cheatsheet](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerCommandCheatSheet.md)
+- [App: Docker-Compose File - Creating 2 Different Containers:  WordPress Container depends on MySql Container](https://github.com/apotitech/Swift-Docker/blob/main/DockerCompose.md)
+- [App: Creating Docker Swarm Cluster With 5 PCs using PlayWithDocker : 3 x WordPress Containers and 1 x MySql Container using Docker-Compose File](https://github.com/apotitech/Swift-Docker/blob/main/DockerStackService.md)
+- [App: Running Docker Free Local Registry, Tagging Image, Pushing Image to the Local Registry, Pulling Image From Local Registry and Deleting Images from Local Registry](https://github.com/apotitech/Swift-Docker/blob/main/DockerLocalRegistry.md)
+- [App: Transferring Content between Host PC and Docker Container](https://github.com/apotitech/Swift-Docker/blob/main/DockerTransferringContent.md)
+- [App: Creating Docker Container using Dockerfile to Build C++ on Ubuntu18.04](https://github.com/apotitech/Swift-Docker/blob/main/DockerfileForLinuxC%2B%2BBuild.md)
+- [App: Creating Docker Container using Dockerfile to Build C++ on Windows](https://github.com/apotitech/Swift-Docker/blob/main/DockerfileForWindowsC%2B%2BBuild.md)
+- [Docker Commands Cheatsheet](https://github.com/apotitech/Swift-Docker/blob/main/DockerCommandCheatSheet.md)
 
 # Table of Contents
 - [Motivation](#motivation)
@@ -116,7 +116,7 @@ Why should we use Docker? "Docker changed the way applications used to build and
 
 ![image](https://user-images.githubusercontent.com/10358317/113183434-4eb00a00-9254-11eb-9275-9b1ccf705d5b.png) 
 
-[App: Running Docker Free Local Registry, Tagging Container, Pushing to Local Registry, Pulling From Local Registry and Deleting Images from Local Registry](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerLocalRegistry.md)
+[App: Running Docker Free Local Registry, Tagging Container, Pushing to Local Registry, Pulling From Local Registry and Deleting Images from Local Registry](https://github.com/apotitech/Swift-Docker/blob/main/DockerLocalRegistry.md)
 
 ### Docker Command Structure  <a name="command"></a>
 
@@ -156,7 +156,7 @@ docker load -i <path to docker image tar file>
 docker load -i .\hello.tar
 ```
 
-Goto: [App: Creating First Docker Image and Container using Docker File](https://github.com/omerbsezer/Fast-Docker/blob/main/FirstImageFirstContainer.md)
+Goto: [App: Creating First Docker Image and Container using Docker File](https://github.com/apotitech/Swift-Docker/blob/main/FirstImageFirstContainer.md)
 
 #### Docker Container: Life Cycle
 
@@ -196,7 +196,7 @@ docker volume create test
 docker container run --name [containerName] -v [volumeName]:[pathInContainer] [imageName]
 docker container run --name c1 -v test:/app alpine
 ```
-Goto: [App: Binding Volume to the Different Containers](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerVolume.md)
+Goto: [App: Binding Volume to the Different Containers](https://github.com/apotitech/Swift-Docker/blob/main/DockerVolume.md)
 
 #### Bind Mount
 ```
@@ -205,8 +205,8 @@ docker container run --name c1 -v C:\test:/app alpine
 ```
 ![image](https://user-images.githubusercontent.com/10358317/113184347-57eda680-9255-11eb-811c-9f55efd11deb.png) (Ref: Docker.com)
 
-Goto: [App: Binding Mount to Container](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerVolume.md#app_mount)
-Goto: [App: Transferring Content between Host PC and Docker Container](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerTransferringContent.md)
+Goto: [App: Binding Mount to Container](https://github.com/apotitech/Swift-Docker/blob/main/DockerVolume.md#app_mount)
+Goto: [App: Transferring Content between Host PC and Docker Container](https://github.com/apotitech/Swift-Docker/blob/main/DockerTransferringContent.md)
 
 ### Docker Network <a name="network"></a>
 - Docker containers work like VMs.
@@ -298,9 +298,9 @@ docker logs --details [containerName]
 
 ![image](https://user-images.githubusercontent.com/10358317/113185932-54f3b580-9257-11eb-9f50-0d18512a0c40.png)
 
-Goto: [App: Creating Docker Container using Dockerfile to Build C++ on Ubuntu18.04](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerfileForLinuxC%2B%2BBuild.md)
+Goto: [App: Creating Docker Container using Dockerfile to Build C++ on Ubuntu18.04](https://github.com/apotitech/Swift-Docker/blob/main/DockerfileForLinuxC%2B%2BBuild.md)
 
-Goto: [App: Creating Docker Container using Dockerfile to Build C++ on Windows](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerfileForWindowsC%2B%2BBuild.md)
+Goto: [App: Creating Docker Container using Dockerfile to Build C++ on Windows](https://github.com/apotitech/Swift-Docker/blob/main/DockerfileForWindowsC%2B%2BBuild.md)
 
 #### Sample Docker Files
 
@@ -358,7 +358,7 @@ docker load -i .\hello.tar
 
 ![image](https://user-images.githubusercontent.com/10358317/113186047-748ade00-9257-11eb-9c1c-1604d53523e8.png)
 
-Goto: [App: Creating First Docker Image and Container using Docker File](https://github.com/omerbsezer/Fast-Docker/blob/main/FirstImageFirstContainer.md)
+Goto: [App: Creating First Docker Image and Container using Docker File](https://github.com/apotitech/Swift-Docker/blob/main/FirstImageFirstContainer.md)
 
 ### Docker Compose  <a name="compose"></a>
 - Define and run multi-container applications with Docker.
@@ -414,7 +414,7 @@ networks:
 docker-compose up -d
 docker-compose down
 ```
-Goto: [App: Docker-Compose File - Creating 2 Different Containers:  WordPress Container depends on MySql Container](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerCompose.md)
+Goto: [App: Docker-Compose File - Creating 2 Different Containers:  WordPress Container depends on MySql Container](https://github.com/apotitech/Swift-Docker/blob/main/DockerCompose.md)
 
 ### Docker Swarm  <a name="swarm"></a>
 
@@ -459,7 +459,7 @@ docker service rollback --detach testservice (rollbacking to previous state)
 
 ![image](https://user-images.githubusercontent.com/10358317/113303356-4a8df600-9301-11eb-9114-38872ca01f29.png)
 
-Goto: [App: Creating Docker Swarm Cluster With 5 PCs using PlayWithDocker : 3 x WordPress Containers and 1 x MySql Container using Docker-Compose File](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerStackService.md)
+Goto: [App: Creating Docker Swarm Cluster With 5 PCs using PlayWithDocker : 3 x WordPress Containers and 1 x MySql Container using Docker-Compose File](https://github.com/apotitech/Swift-Docker/blob/main/DockerStackService.md)
 
 ## Play With Docker  <a name="playWithDocker"></a>
 
@@ -469,7 +469,7 @@ Goto: [App: Creating Docker Swarm Cluster With 5 PCs using PlayWithDocker : 3 x 
 
 ## Docker Commands Cheatsheet <a name="cheatsheet"></a>
 
-Goto: [Docker Commands Cheatsheet](https://github.com/omerbsezer/Fast-Docker/blob/main/DockerCommandCheatSheet.md)
+Goto: [Docker Commands Cheatsheet](https://github.com/apotitech/Swift-Docker/blob/main/DockerCommandCheatSheet.md)
 
 ## Other Useful Resources Related Docker  <a name="resource"></a>
 - Original Docker Document: https://docs.docker.com/get-started/
